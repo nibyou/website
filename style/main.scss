@@ -1,0 +1,41 @@
+// Bootstrap (Grid only)
+@import "vendor/bootstrap/bootstrap-grid.min.css";
+
+// Configs
+@import "config";
+
+// Modules
+@import "modules/header";
+@import "modules/body";
+@import "modules/divider";
+@import "modules/m1-supporters";
+@import "modules/m2-partners";
+@import "modules/m3-software";
+@import "modules/m4-team";
+@import "modules/m5-newsletter";
+@import "modules/footer";
+
+// Base
+html {
+    & * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, 'Kumbh Sans', sans-serif;
+        color: $color-ny-primary;
+        margin: 0;
+        max-width: 100%;
+
+        section {
+            box-sizing: border-box;
+        }
+
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            text-decoration: none;
+        }
+    }
+}

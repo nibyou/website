@@ -1,0 +1,82 @@
+.ny-m4 {
+    .ny-m4-profile {
+        margin-top: 15px;
+
+        .ny-m4-profile_image-wrapper {
+            display: flex;
+            align-items: center;
+
+            .ny-m4-profile_image {
+                height: 100px;
+                margin: 0 15px;
+
+                img {
+                    height: 100%;
+                    border-radius: 50%;
+                }
+            }
+
+            .ny-m4-profile_name * {
+                margin: 0;
+            }
+        }
+
+        .ny-m4-profile_text {
+            margin-top: 20px;
+
+            ul {
+                margin: 0;
+                list-style-type: none;
+                padding-left: 60px;
+            }
+
+            ul > li {
+                font-size: 13px;
+                margin-bottom: 5px;
+                margin-left: 15px;
+            }
+
+            ul > li:before {
+                content: "-";
+                text-indent: -15px;
+                position: absolute;
+            }
+
+        }
+    }
+}
+
+@media (min-width: $breakpoint--sm) {
+    .ny-m4 {
+        .ny-m4-profile {
+            .ny-m4-profile_text {
+                ul {
+                    padding-right: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $breakpoint--lg) {
+    .ny-m4 {
+        .ny-m4-profile {
+            .ny-m4-profile_image-wrapper {
+                .ny-m4-profile_name h3 {
+                    font-size: 1.2em;
+                }
+            }
+
+            .ny-m4-profile_text {
+                ul {
+                    padding-left: 0;
+
+                    li {
+                        font-size: 14px;
+                        line-height: 1.4em;
+                    }
+                }
+            }
+        }
+    }
+}

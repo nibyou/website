@@ -1,0 +1,14 @@
+.ny_body {
+    background-image: linear-gradient(to right, #C0DADB, #D1E4E5, #FFFFFF);
+    padding-bottom: 30px;
+
+    .ny_headline {
+        color: $color-ny-secondary;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    &#imprint {
+        padding-top: 150px;
+    }
+}

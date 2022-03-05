@@ -1,0 +1,20 @@
+
+//@import url('https://fonts.googleapis.com/css?family=Kumbh+Sans:300,400,700');
+
+// Colors
+$color-ny-primary: #32565E;
+$color-ny-secondary: #4D9391;
+$color-ny-modal_background: #EAF3F3;
+
+// Breakpoints
+$breakpoint--sm: 576px;
+$breakpoint--md: 768px;
+$breakpoint--lg: 992px;
+
+$media__sm--min: (min-width: $breakpoint--sm);
+$media__md--min: (min-width: $breakpoint--md);
+$media__lg--min: (min-width: $breakpoint--lg);
+
+$media__sm--max: (max-width: $breakpoint--sm);
+$media__md--max: (max-width: $breakpoint--md);
+$media__lg--max: (max-width: $breakpoint--lg);

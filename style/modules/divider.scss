@@ -1,0 +1,88 @@
+#ny-divider-1 {
+    padding-left: 40px;
+
+    & > svg {
+        width: 40%;
+        height: auto;
+    }
+}
+
+#ny-divider-2 {
+    text-align: center;
+
+    svg {
+        width: 70%
+    }
+}
+
+#ny-divider-3 {
+    text-align: center;
+
+    svg {
+        width: 70%;
+    }
+}
+
+#ny-divider-4 {
+    text-align: center;
+
+    svg {
+        width: 70%;
+    }
+}
+
+@media (min-width: $breakpoint--sm) {
+    #ny-divider-2 {
+        margin: 4em 0 1em 0;
+    }
+
+    #ny-divider-3 {
+        margin-top: -1em;
+    }
+}
+
+@media (min-width: $breakpoint--md) {
+    #ny-divider-2 {
+        margin: -1em 0 1em 0;
+    }
+}
+
+@media (max-width: $breakpoint--md) {
+    .ny-divider svg line {
+        stroke-width: 4;
+    }
+}
+
+@media (min-width: $breakpoint--lg) {
+    #ny-divider-1 {
+        margin-bottom: 4em;
+    }
+
+    #ny-divider-2 {
+        margin: 5em 4em 4em;
+
+        svg {
+            width: 80%;
+            height: 130px;
+        }
+    }
+
+    #ny-divider-3 {
+        margin-top: 4em;
+        padding-bottom: 4em;
+
+        svg {
+            width: 80%;
+            height: 100px;
+        }
+    }
+
+    #ny-divider-4 {
+        margin-top: 6em;
+        padding-bottom: 5em;
+
+        svg {
+            height: 130px;
+        }
+    }
+}

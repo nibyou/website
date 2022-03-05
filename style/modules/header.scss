@@ -1,0 +1,80 @@
+.ny_header {
+    padding-top: 30px;
+    height: 400px;
+    background-image: url("../assets/Mountains.png");
+    background-size: cover;
+    position: relative;
+
+    nav {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        span {
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+    }
+
+    .ny_header-logo {
+        img {
+            width: 100px;
+        }
+    }
+
+    .ny_header-text {
+        position: absolute;
+        bottom: 15%;
+
+        h1 {
+            word-spacing: 1000px;
+            line-height: 1.2em;
+            font-size: 2em;
+            margin-bottom: 0;
+        }
+
+        p {
+            color: $color-ny-secondary;
+            font-size: 1.1em;
+        }
+    }
+}
+
+@media (min-width: $breakpoint--md) {
+    .ny_header {
+        .ny_header-logo {
+            img {
+                width: 140px;
+            }
+        }
+    }
+}
+
+@media (min-width: $breakpoint--md) {
+    .ny_header {
+        .ny_header-text {
+            width: 70%;
+
+            p {
+                line-height: 1.5em;
+            }
+        }
+    }
+}
+
+@media (min-width: $breakpoint--lg) {
+    .ny_header {
+        .ny_header-text {
+            width: 50%;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .ny_header {
+        .ny_header-text {
+            width: 30%;
+        }
+    }
+}

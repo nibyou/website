@@ -1,0 +1,69 @@
+.ny-m1 {
+
+    p {
+        font-weight: 600;
+        line-height: 1.6em;
+    }
+
+    .ny-m1-text {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .ny-m1-supporter_wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .ny-m1-supporter {
+            text-align: center;
+            width: 80%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (min-width: $breakpoint--sm) {
+    .ny-m1 {
+        .ny-m1-supporter_wrapper {
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .ny-m1-supporter {
+                width: 50%;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+        }
+    }
+}
+
+@media (min-width: $breakpoint--md) {
+    .ny-m1 {
+        .ny-m1-supporter_wrapper {
+            .ny-m1-supporter {
+                padding: 30px;
+            }
+        }
+    }
+}
+
+@media (min-width: $breakpoint--lg) {
+    .ny-m1 {
+        .ny-m1-text {
+            p {
+                font-size: 1.5em;
+                line-height: 1.8em;
+            }
+        }
+
+        .ny-m1-supporter_wrapper {
+            .ny-m1-supporter {
+                padding-top: 20px;
+            }
+        }
+    }
+}

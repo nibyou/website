@@ -1,0 +1,120 @@
+.ny-m2 {
+    justify-content: center;
+
+    .ny-m2-partner {
+
+        h3 {
+            border-bottom: 1px solid $color-ny-secondary;
+            padding-bottom: 15px;
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 12px;
+            line-height: 2em;
+        }
+
+        .ny-m2-partner_info {
+            text-align: center;
+            margin-top: 40px;
+
+            a {
+                border: 1px solid $color-ny-secondary;
+                border-radius: 15px;
+                padding: 5px;
+                color: $color-ny-secondary;
+            }
+        }
+    }
+
+    .flickity-button {
+        display: none !important;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    button.flickity-button.flickity-prev-next-button {
+        background-size: contain;
+
+        &.previous {
+            background-image: url("../assets/carousel-buttons/button-previous.svg");
+            left: -5px;
+        }
+
+        &.next {
+            background-image: url("../assets/carousel-buttons/button-next.svg");
+            right: -5px;
+        }
+
+        svg {
+            display: none !important;
+        }
+    }
+}
+
+@media (max-width: $breakpoint--sm) {
+    .ny-m2 {
+        .ny-m2-partner {
+            padding: 0 20px;
+            box-sizing: border-box;
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+
+        .flickity-page-dots {
+            bottom: -25px;
+        }
+    }
+}
+
+@media (min-width: $breakpoint--md) {
+    .ny-m2 {
+        .ny-m2-partner {
+            box-sizing: border-box;
+            padding: 0 40px;
+        }
+
+        .flickity-page-dots {
+            display: none;
+        }
+
+        .flickity-button {
+            display: block !important;
+        }
+    }
+}
+
+@media (max-width: $breakpoint--md) {
+    .ny-m2 {
+
+    }
+}
+
+@media (min-width: $breakpoint--lg) {
+    .ny-m2 {
+        .ny-carousel-wrapper {
+            width: 90%;
+        }
+
+
+        .ny-m2-partner {
+            box-sizing: border-box;
+            padding: 0 30px;
+        }
+
+        button.flickity-button.flickity-prev-next-button {
+            &.previous {
+                background-image: url("../assets/carousel-buttons/button-previous.svg");
+                left: -20px;
+            }
+
+            &.next {
+                right: -20px;
+            }
+        }
+    }
+}
