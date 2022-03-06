@@ -7,6 +7,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
             data: {'email': $('#email').val()},
             success: function(result) {
                 formSuccessMessage();
+            },
+            error: function(result) {
+                formErrorMessage();
             }
         });
     });
@@ -16,4 +19,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
             $('#ny-m5-submit').css('display', 'none');
             $('#ny-m5-success').css('display', 'block');
     };
+
+    let formErrorMessage = function () {
+            $('#email').css('display', 'none');
+            $('#ny-m5-submit').css('display', 'none');
+            $('#ny-m5-error').css('display', 'block');
+    }
 });
