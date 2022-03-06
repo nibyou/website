@@ -1,7 +1,7 @@
 @import "vendor/bootstrap/bootstrap-grid.min.css";
 .ny_header {
   padding-top: 30px;
-  height: 700px;
+  height: 100vh;
   background-image: url("../assets/mountain.png");
   background-size: cover;
   position: relative;
