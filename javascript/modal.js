@@ -4,29 +4,33 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let modals = document.querySelectorAll('.ny-modal');
 
     for (let i = 0; i < btn.length; i++) {
-        btn[i].onclick = function (e) {
+        btn[i].addEventListener("click",function (e) {
             e.preventDefault();
-            modal = document.querySelector(e.target.getAttribute("href"));
+            let modal = document.querySelector(e.target.getAttribute("href"));
             modal.style.display = "flex";
 
             return;
+        });
+    }
+
+    function closeModals() {
+        for (let index in modals) {
+            if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
         }
     }
 
-    window.onclick = function (event) {
+    window.addEventListener("click", function (event) {
         if (event.target.classList.contains('ny-modal-button') === false) {
-            for (let index in modals) {
-                if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
-            }
+            closeModals();
         }
+    });
 
-    }
-
-    document.onkeyup = function (e) {
+    document.addEventListener("keyup", function (e) {
         if (e.key === 'Escape') {
-            for (let index in modals) {
-                if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
-            }
+            closeModals();
         }
-    };
+    });
+
+
+
 });
