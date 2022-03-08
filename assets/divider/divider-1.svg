@@ -1,5 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="566" height="179" viewBox="0 0 566 179">
-    <line id="Linie_38" data-name="Linie 38" y2="141" transform="translate(565)" fill="none" stroke="#4d9391" stroke-width="4"/>
-    <line id="Linie_39" data-name="Linie 39" x1="566" transform="translate(0 141)" fill="none" stroke="#4d9391" stroke-width="4"/>
-    <line id="Linie_40" data-name="Linie 40" y2="38" transform="translate(1 141)" fill="none" stroke="#4d9391" stroke-width="4"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="566" height="179" viewBox="0 0 566 179"><line id="Linie_38" y2="141" fill="none" stroke="#4d9391" stroke-width="4" data-name="Linie 38" transform="translate(565)"/><line id="Linie_39" x1="566" fill="none" stroke="#4d9391" stroke-width="4" data-name="Linie 39" transform="translate(0 141)"/><line id="Linie_40" y2="38" fill="none" stroke="#4d9391" stroke-width="4" data-name="Linie 40" transform="translate(1 141)"/></svg>
