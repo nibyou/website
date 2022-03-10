@@ -1,28 +1,33 @@
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
-    $('#ny-m5-submit').click(function () {
-        $.ajax({
-            url: "https://phpapi.nibyou.com/mailinglist-client/api.php",
-            data: {'email': $('#email').val()},
-            success: function(result) {
-                formSuccessMessage();
+    document.querySelector('#ny-m5-submit').addEventListener("click", async function () {
+        const res = await fetch('https://phpapi.nibyou.com/mailinglist-client/api.php', {
+            method: 'POST',
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
             },
-            error: function(result) {
-                formErrorMessage();
-            }
-        });
+            body: JSON.stringify({email:document.querySelector("#email").value})
+        }).catch(formErrorMessage)
+
+        if (res.ok) formSuccessMessage()
+        else formErrorMessage()
+
+        let json = await res.json()
+        console.log(json)
+
     });
 
     let formSuccessMessage = function () {
-            $('#email').css('display', 'none');
-            $('#ny-m5-submit').css('display', 'none');
-            $('#ny-m5-success').css('display', 'block');
+        document.querySelector("#email").style.display = "none"
+        document.querySelector("#ny-m5-submit").style.display = "none"
+        document.querySelector("#ny-m5-success").style.display = "block"
     };
 
     let formErrorMessage = function () {
-            $('#email').css('display', 'none');
-            $('#ny-m5-submit').css('display', 'none');
-            $('#ny-m5-error').css('display', 'block');
+        document.querySelector("#email").style.display = "none"
+        document.querySelector("#ny-m5-submit").style.display = "none"
+        document.querySelector("#ny-m5-error").style.display = "block"
     }
 });
