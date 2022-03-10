@@ -20,14 +20,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
 
     let formSuccessMessage = function () {
-        document.querySelector("#email").style.display = none;
-        document.querySelector("#ny-m5-submit").style.display = none;
-        document.querySelector("#ny-m5-success").style.display = block;
+        document.querySelector("#email").style.display = "none"
+        document.querySelector("#ny-m5-submit").style.display = "none"
+        document.querySelector("#ny-m5-success").style.display = "block"
     };
 
     let formErrorMessage = function () {
-        document.querySelector("#email").style.display = none;
-        document.querySelector("#ny-m5-submit").style.display = none;
-        document.querySelector("#ny-m5-error").style.display = block;
+        document.querySelector("#email").style.display = "none"
+        document.querySelector("#ny-m5-submit").style.display = "none"
+        document.querySelector("#ny-m5-error").style.display = "block"
     }
 });
