@@ -1,8 +1,6 @@
 {
   "name": "website",
-  "version": "1.0.0",
-  "description": "<p align=\"center\">   <img src=\"https://content.luca-kiebel.de/websites/nibyou.de/img/NIBYOU%20logo%20and%20claim%20-%20digital%20-%20big.png\" alt=\"Nibyou Logo\"> </p>",
-  "main": "index.js",
+  "description": "Nibyou Website build script",
   "scripts": {
     "compile-sass": "sass style/main.scss style/main.css",
     "uglify-css": "uglifycss style/main.css > style/main.min.css",
@@ -10,16 +8,6 @@
     "build": "npm run compile-sass && npm run uglify-css && npm run uglify-js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nibyou/website.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nibyou/website/issues"
-  },
-  "homepage": "https://github.com/nibyou/website#readme",
   "dependencies": {
     "sass": "^1.49.9",
     "uglifycss": "^0.0.29",
